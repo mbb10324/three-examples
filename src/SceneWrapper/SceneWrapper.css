@@ -1,0 +1,50 @@
+.splash-container {
+	background-color: #101010;
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	cursor: e-resize;
+	animation: fade-in 0.5s ease-in-out;
+	max-height: 100vh;
+}
+
+.continue-button {
+	font-family: "Manrope-Light", sans-serif;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	transform: translate(0, -50%);
+	font-size: 8rem;
+	color: #fff;
+	cursor: pointer;
+	z-index: 4;
+	transition: all 0.5s cubic-bezier(0.79, -0.05, 0.37, 3);
+}
+
+.continue-button:hover {
+	font-size: 12rem;
+}
+
+/*MEDIA BREAKPOINTS
+*********************************************************************************************/
+
+@media screen and (max-width: 1000px) {
+	.continue-button {
+		font-size: 4rem;
+	}
+	.continue-button:hover {
+		font-size: 6rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.continue-button {
+		font-size: 16vw;
+		top: 8vh;
+		text-align: center;
+		width: 100vw;
+		left: auto;
+		right: auto;
+	}
+}

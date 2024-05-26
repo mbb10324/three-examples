@@ -1,0 +1,20 @@
+.smoke-canvas-container {
+	position: relative;
+}
+
+.smoke-background-image {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	z-index: 1;
+}
+
+.smoke-canvas-content {
+	position: relative;
+	z-index: 2;
+}
